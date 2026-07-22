@@ -1,0 +1,94 @@
+.settings h1 {
+  margin: 0 0 0.35rem;
+  color: var(--text-strong);
+}
+
+.settings > .muted {
+  margin: 0 0 1.25rem;
+}
+
+.settings-card {
+  padding: 1.15rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.settings-card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: var(--text-strong);
+}
+
+.lang-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.lang {
+  border: 1.5px solid var(--border);
+  background: var(--input-bg);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.lang.active {
+  background: var(--card-accent);
+  color: var(--primary);
+  border-color: var(--border);
+}
+
+.theme-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-width: 120px;
+  padding: 0.75rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text-muted);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-card.active {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 25%, transparent);
+  color: var(--text-strong);
+}
+
+.theme-swatches {
+  display: flex;
+  gap: 4px;
+}
+
+.theme-swatches span {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.theme-label {
+  font-size: 0.9rem;
+}
+
+.api-code {
+  display: block;
+  padding: 0.65rem 0.8rem;
+  background: var(--bg-soft);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-size: 0.88rem;
+  word-break: break-all;
+  color: var(--text-strong);
+}

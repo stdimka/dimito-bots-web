@@ -1,0 +1,204 @@
+.chart {
+  padding: 1.05rem 1.15rem 0.95rem;
+  margin-bottom: 1.1rem;
+}
+
+.chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.chart-head strong {
+  display: block;
+  color: var(--text-strong);
+  font-size: 1rem;
+}
+
+.chart-sub {
+  display: block;
+  font-size: 0.78rem;
+  margin-top: 0.15rem;
+}
+
+.chart-last-wrap {
+  text-align: right;
+}
+
+.chart-last-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 0.1rem;
+}
+
+.chart-last {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.chart-svg-wrap {
+  width: 100%;
+  /* Neutral surface — не сливается с Federal green */
+  background: linear-gradient(180deg, #f8faf7 0%, #eef2ec 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+[data-theme="dark"] .chart-svg-wrap {
+  background: linear-gradient(180deg, #222 0%, #1a1a1a 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+[data-theme="mindaro"] .chart-svg-wrap {
+  background: linear-gradient(180deg, #fffef8 0%, #f4f0e0 100%);
+}
+
+.chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+  cursor: crosshair;
+}
+
+.chart-plot-bg {
+  fill: rgba(255, 255, 255, 0.35);
+}
+
+[data-theme="dark"] .chart-plot-bg {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.chart-grid {
+  stroke: var(--text-muted);
+  stroke-width: 1;
+  opacity: 0.18;
+  stroke-dasharray: 2 5;
+}
+
+.chart-axis-label {
+  fill: var(--text-muted);
+  font-size: 10.5px;
+  font-family: var(--font);
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-area {
+  opacity: 0.08;
+}
+
+.chart-last-tag {
+  fill: #fff;
+  font-size: 9.5px;
+  font-family: var(--font);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-crosshair {
+  stroke: var(--text-muted);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  opacity: 0.55;
+}
+
+.chart-tip-bg {
+  fill: rgba(28, 28, 28, 0.92);
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 1;
+}
+
+.chart-tip-title,
+.chart-tip-line,
+.chart-tip-chg {
+  font-family: var(--font);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-tip-title {
+  fill: #fff;
+  font-weight: 700;
+}
+
+.chart-tip-line {
+  fill: #c8c8c8;
+}
+
+.chart-tip-chg {
+  font-weight: 700;
+  font-size: 11px;
+  font-family: var(--font);
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.chart-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.chart-legend .mark {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.chart-legend .mark.entry {
+  border-bottom: 8px solid #1b8a3e;
+  border-top: 0;
+}
+
+.chart-legend .mark.exit-win {
+  border-top: 8px solid #1b8a3e;
+  border-bottom: 0;
+}
+
+.chart-legend .mark.exit-loss {
+  border-top: 8px solid #d32f2f;
+  border-bottom: 0;
+}
+
+.chart-hint {
+  margin-left: auto;
+  font-size: 0.75rem;
+}
+
+.chart-empty {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+@media (max-width: 640px) {
+  .chart-hint {
+    display: none;
+  }
+  .chart-svg {
+    min-height: 220px;
+  }
+}

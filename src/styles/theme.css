@@ -1,0 +1,78 @@
+/* Theme tokens — match mobile THEMES (mindaro / dark / federal) */
+
+:root,
+[data-theme="mindaro"] {
+  --bg: #faf6e9;
+  --bg-soft: #f3eedc;
+  --primary: #22333b;
+  --on-primary: #faf6e9;
+  --text: #3d4f56;
+  --text-strong: #22333b;
+  --text-muted: #6b7d85;
+  --card: #ffffff;
+  --card-accent: #ddeb9d;
+  --success: #2e7d32;
+  --warning: #e65100;
+  --error: #c62828;
+  --border: #c5d4a0;
+  --overlay: rgba(34, 51, 59, 0.45);
+  --shadow: 0 8px 28px rgba(34, 51, 59, 0.08);
+  --shadow-sm: 0 2px 10px rgba(34, 51, 59, 0.06);
+  --gradient-a: #ddeb9d88;
+  --gradient-b: #c5d4a055;
+  --logo-grad: linear-gradient(145deg, #ddeb9d, #b8c97a);
+  --input-bg: #ffffff;
+  --theme-color: #ddeb9d;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --font: "DM Sans", system-ui, -apple-system, sans-serif;
+  --max: 1100px;
+}
+
+[data-theme="dark"] {
+  --bg: #1c1c1c;
+  --bg-soft: #252525;
+  --primary: #fa3d3b;
+  --on-primary: #ffffff;
+  --text: #c6c6c6;
+  --text-strong: #ffffff;
+  --text-muted: #8a8a8a;
+  --card: #252525;
+  --card-accent: #333333;
+  --success: #4caf50;
+  --warning: #ff9800;
+  --error: #f44336;
+  --border: #333333;
+  --overlay: rgba(0, 0, 0, 0.7);
+  --shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.25);
+  --gradient-a: #fa3d3b33;
+  --gradient-b: #33333388;
+  --logo-grad: linear-gradient(145deg, #fa3d3b, #c62828);
+  --input-bg: #1a1a1a;
+  --theme-color: #1c1c1c;
+}
+
+[data-theme="federal"] {
+  --bg: #daefb3;
+  --bg-soft: #c5e89a;
+  --primary: #88304e;
+  --on-primary: #ffffff;
+  --text: #3d2a4a;
+  --text-strong: #07004d;
+  --text-muted: #5c4d6e;
+  --card: #ffffff;
+  --card-accent: #c5e89a;
+  --success: #2e7d32;
+  --warning: #e65100;
+  --error: #c62828;
+  --border: #9bc47a;
+  --overlay: rgba(7, 0, 77, 0.45);
+  --shadow: 0 8px 28px rgba(7, 0, 77, 0.1);
+  --shadow-sm: 0 2px 10px rgba(7, 0, 77, 0.08);
+  --gradient-a: #88304e33;
+  --gradient-b: #07004d22;
+  --logo-grad: linear-gradient(145deg, #88304e, #07004d);
+  --input-bg: #ffffff;
+  --theme-color: #daefb3;
+}

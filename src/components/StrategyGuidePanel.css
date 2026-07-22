@@ -1,0 +1,110 @@
+.guide-panel {
+  padding: 1rem 1.15rem 1.15rem;
+  margin-bottom: 1.1rem;
+}
+
+.guide-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  border: none;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.guide-header-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.guide-header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text-strong);
+}
+
+.guide-cat {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.guide-toggle {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.guide-body {
+  margin-top: 0.9rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.guide-body h3 {
+  margin: 0.85rem 0 0.3rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.guide-body h3:first-child {
+  margin-top: 0;
+}
+
+.guide-body p {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.guide-body ol {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.guide-body li {
+  margin-bottom: 0.3rem;
+}
+
+.guide-risk {
+  color: var(--error) !important;
+}
+
+.guide-tip {
+  margin-top: 0.95rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+}
+
+.guide-tip strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+.guide-tip p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.guide-disclaimer {
+  margin-top: 0.9rem !important;
+  font-size: 0.8rem !important;
+}
