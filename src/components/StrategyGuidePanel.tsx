@@ -54,8 +54,20 @@ export function StrategyGuidePanel({ strategy, accentColor }: Props) {
         </span>
       </button>
 
+      {guide.short ? <p className="guide-short">{guide.short}</p> : null}
+
       {open ? (
         <div className="guide-body">
+          <div className="guide-learn chart">
+            <h3>{t(locale, "guideLookChart")}</h3>
+            <p>{guide.lookOnChart}</p>
+          </div>
+
+          <div className="guide-learn do">
+            <h3>{t(locale, "guideWhatToDo")}</h3>
+            <p>{guide.whatToDo}</p>
+          </div>
+
           <h3>{t(locale, "guideIdea")}</h3>
           <p>{guide.idea}</p>
 

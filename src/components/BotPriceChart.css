@@ -11,6 +11,81 @@
   margin-bottom: 0.7rem;
 }
 
+.chart-head-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.45rem;
+}
+
+.chart-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.chart-chip {
+  border: 1.5px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+.chart-chip:hover {
+  border-color: var(--primary);
+  color: var(--text-strong);
+}
+
+.chart-chip.active {
+  background: color-mix(in srgb, var(--primary) 14%, var(--card));
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+  color: var(--text-strong);
+}
+
+.chart-legend .line {
+  display: inline-block;
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.chart-legend .line.fast {
+  background: #2563eb;
+}
+
+.chart-legend .line.slow {
+  background: #d97706;
+}
+
+.chart-legend .line.levels {
+  background: #7c3aed;
+}
+
+.chart-legend .line.rsi {
+  background: #0d9488;
+}
+
+.chart-level-label {
+  font-size: 9.5px;
+  font-family: var(--font);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-pane-title {
+  fill: var(--text-muted);
+  font-size: 10px;
+  font-family: var(--font);
+  font-weight: 700;
+}
+
 .chart-head strong {
   display: block;
   color: var(--text-strong);

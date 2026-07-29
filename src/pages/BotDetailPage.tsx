@@ -225,6 +225,8 @@ export function BotDetailPage() {
         data={chart}
         loading={chartLoading}
         accentColor={bot.color}
+        botParams={bot.parameters}
+        strategy={bot.strategy}
       />
 
       <StrategyGuidePanel strategy={bot.strategy} accentColor={bot.color} />

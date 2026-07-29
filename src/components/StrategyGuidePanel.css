@@ -43,10 +43,50 @@
   white-space: nowrap;
 }
 
+.guide-short {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.45;
+}
+
 .guide-body {
   margin-top: 0.9rem;
   padding-top: 0.85rem;
   border-top: 1px solid var(--border);
+}
+
+.guide-learn {
+  margin: 0 0 0.85rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.guide-learn.chart {
+  background: color-mix(in srgb, var(--primary) 10%, var(--card));
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+}
+
+.guide-learn.do {
+  background: color-mix(in srgb, var(--success) 10%, var(--card));
+  border-color: color-mix(in srgb, var(--success) 35%, var(--border));
+}
+
+.guide-learn h3 {
+  margin: 0 0 0.4rem !important;
+  font-size: 0.85rem !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  color: var(--text-strong) !important;
+  font-weight: 800;
+}
+
+.guide-learn p {
+  margin: 0 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.55 !important;
+  color: var(--text-strong) !important;
 }
 
 .guide-body h3 {
@@ -55,10 +95,6 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--text-muted);
-}
-
-.guide-body h3:first-child {
-  margin-top: 0;
 }
 
 .guide-body p {
